@@ -17,6 +17,8 @@ Bearing in mind that the main goals of this study gravitate around randomization
       3. Stability (only for randomization neural networks of multiple layers)
          - Analyzing the dispersion of the test results for specific architectures over 100 test runs.
 2. Other_methods_expsetup
+3. Plot
+   - Code to generate the figures of the paper.
 
 
 # Abstract
