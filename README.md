@@ -2,6 +2,22 @@
 
 This GitHub is intended to gather all datasets, Python source code, details on the hyper-parameter space considered for every model in the benchmark, and simulation results of the paper above.
 
+# Proyect structure
+Bearing in mind that the main goals of this study gravitate around randomization based neural networks, we have split the experimental set up in two folders: one for randomization and the other for the rest of the considered learning methods. Once inside the folder, both shares the same structure of 3 steps:
+
+ Markup : 1. Randomization_expsetup
+              1. Madrid_code
+              2. NYC_code
+              3. PeMS_code
+              4. Seattle_code
+                1. Validation
+                  - Searching the best hyperparameter configuration for each model and scenario.
+                2. Test
+                  - Computing the test score for each model and scenario, using the architecture configuration set in previous stage.
+                3. Stability (only for randomization neural networks of multiple layers)
+                  - Analyzing the dispersion of the test results for specific architectures over 100 test runs.
+          2. Other_methods_expsetup
+
 # Abstract
 Nowadays, Machine Learning algorithms benefit from a great momentum in multiple engineering and scientific fields. In the context of road traffic forecasting, the number of contributions resorting to these modeling techniques is increasing steadily over the last decades, in particular those based on Deep neural networks. In parallel, randomization based neural networks have progressively garnered much interest of the community due to their learning efficiency and good predictive performance level. Although these two properties are often sought for practical road traffic forecasting solutions, randomization based models have been investigated scarcely for this application. Indeed, the instability of these models due to the randomization of their learning phase is often a deciding factor for discarding them in favor of classical data based models. This research work sheds light on this matter by elaborating on the suitability of Random Vector Functional Link (RVFL) -- a representative randomization based neural network -- for road traffic forecasting. On one hand, multiple RVFL variants (single-layer RVFL, deep RVFL and ensemble deep RVFL) are compared to other Machine Learning algorithms over an extensive experimental setup,  which comprises the prediction of traffic data collected at diverse geographical locations that differ in the context and nature of traffic measurements. On the other hand, the stability of RVFL models is subsequently analyzed towards providing insights about the compromise between model complexity and performance. The results obtained by the distinct RVFL based architectures, are found to be similar than those elicited by other data driven methods, yet requiring a much lower number of parameters and thereby, drastically shorter training times and computational effort.
 
