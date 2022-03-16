@@ -35,11 +35,17 @@ Nowadays, Machine Learning algorithms enjoy a great momentum in multiple enginee
 
 ---
 #### If you use any dataset in your work, please cite the following reference:
-###### Reference:
-NOT AVAILABLE YET
+
 ###### BibTex:
 ```
-NOT AVAILABLE YET
+@inproceedings{manibardo2021random,
+  title={Random Vector Functional Link Networks for Road Traffic Forecasting: Performance Comparison and Stability Analysis},
+  author={Manibardo, Eric L and La{\~n}a, Ibai and Del Ser, Javier},
+  booktitle={2021 International Joint Conference on Neural Networks (IJCNN)},
+  pages={1--8},
+  year={2021},
+  organization={IEEE}
+}
 ```
 #### Note: These datasets should be used for research only.
 
